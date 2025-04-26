@@ -1,0 +1,7 @@
+# Service Rules: Task Service
+
+- Use DDD and Clean Architecture
+- Task due date ≥ start date
+- Cannot complete task before assignment
+- Only expose endpoints defined in OpenAPI spec
+- Repository pattern for DB access

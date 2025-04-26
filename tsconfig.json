@@ -1,0 +1,27 @@
+{
+  "files": [],
+  "references": [
+    { "path": "services/employee-service" },
+    { "path": "services/document-service" },
+    { "path": "services/task-service" },
+    { "path": "services/training-service" },
+    { "path": "services/department-service" },
+    { "path": "services/notification-service" },
+    { "path": "libs" },
+    { "path": "infra" }
+  ],
+  "compilerOptions": {
+    "target": "ES2021",
+    "module": "CommonJS",
+    "lib": ["ES2021"],
+    "strict": true,
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "rootDir": "src",
+    "composite": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "exclude": ["node_modules", "dist"]
+}

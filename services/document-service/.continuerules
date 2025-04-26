@@ -1,0 +1,7 @@
+# Service Rules: Document Service
+
+- Use DDD and Clean Architecture
+- Only approved file types for upload
+- Rejected docs must include rejection reason
+- Only expose endpoints defined in OpenAPI spec
+- Repository pattern for DB access

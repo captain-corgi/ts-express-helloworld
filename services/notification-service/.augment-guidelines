@@ -1,0 +1,6 @@
+# Service Rules: Notification Service
+
+- Use DDD and Clean Architecture
+- Reminders for pending tasks/docs
+- Only expose endpoints defined in OpenAPI spec
+- Repository pattern for DB access

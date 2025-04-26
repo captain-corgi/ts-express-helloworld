@@ -1,0 +1,66 @@
+# Node
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Build output
+dist/
+build/
+coverage/
+
+# TypeScript
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.*
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Database
+*.sqlite
+*.db
+*.pgsql
+
+# Misc
+*.local
+*.cache
+*.tgz
+
+# Test output
+/junit.xml
+/test-results/
+
+# OpenAPI generated docs
+*.swagger.json
+*.openapi.json
+
+# Temporary files
+*.tmp
+*.temp
+
+# Monorepo
+libs/
+!libs/Result.ts
+infra/
+
+# Ignore migration artifacts
+*.sql.bak
+*.sql.tmp
+
+# Ignore compiled JS in src if present
+src/**/*.js
+src/**/*.js.map

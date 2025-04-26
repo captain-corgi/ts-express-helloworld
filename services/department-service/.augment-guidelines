@@ -1,0 +1,6 @@
+# Service Rules: Department Service
+
+- Use DDD and Clean Architecture
+- Only one department per employee at a time
+- Only expose endpoints defined in OpenAPI spec
+- Repository pattern for DB access

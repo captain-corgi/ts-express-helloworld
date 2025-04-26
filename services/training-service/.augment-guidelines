@@ -1,0 +1,7 @@
+# Service Rules: Training Service
+
+- Use DDD and Clean Architecture
+- Enrollment closes 1h before session
+- Capacity checks enforced
+- Only expose endpoints defined in OpenAPI spec
+- Repository pattern for DB access

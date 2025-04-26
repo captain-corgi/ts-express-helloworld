@@ -1,0 +1,7 @@
+# Service Rules: Employee Service
+
+- Use DDD and Clean Architecture
+- Employee email must be unique
+- Required fields: name, email, start date
+- Only expose endpoints defined in OpenAPI spec
+- Repository pattern for DB access
