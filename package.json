@@ -11,5 +11,8 @@
     "dev": "pnpm -r run dev",
     "build": "pnpm -r run build",
     "start": "pnpm -r run start"
+  },
+  "dependencies": {
+    "uuid": "^11.1.0"
   }
 }
