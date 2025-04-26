@@ -13,7 +13,7 @@ describe('Employee Registration Integration', () => {
   const useCase = new RegisterEmployeeUseCase(repo);
   const controller = new EmployeeController(useCase);
 
-  app.post('/api/employees', validateEmployee, (req, res, next) => controller.register(req, res, next));
+  app.post('/api/employees', validateEmployee, (req, res, next) => { controller.register(req, res, next); });
   app.use(errorHandler);
 
   it('registers a new employee', async () => {

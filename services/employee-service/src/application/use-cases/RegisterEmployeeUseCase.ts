@@ -8,7 +8,7 @@ import { EmployeeName } from '../../domain/value-objects/EmployeeName';
 import { EmployeeEmail } from '../../domain/value-objects/EmployeeEmail';
 import { EmployeeStatus } from '../../domain/entities/Employee';
 import { v4 as uuidv4 } from 'uuid';
-import { Result, ok, fail } from '../../../../libs/Result';
+import { Result, ok, fail } from '../../../../../libs/Result';
 
 export class RegisterEmployeeUseCase {
   constructor(private readonly employeeRepository: EmployeeRepository) {}

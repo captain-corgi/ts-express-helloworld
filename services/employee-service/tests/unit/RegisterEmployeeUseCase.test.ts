@@ -7,8 +7,12 @@ describe('RegisterEmployeeUseCase', () => {
     const useCase = new RegisterEmployeeUseCase(repo);
     const result = await useCase.execute({ name: 'Alice', email: 'alice@email.com', startDate: new Date() });
     expect(result.isSuccess).toBe(true);
-    expect(result.value.name).toBe('Alice');
-    expect(result.value.email).toBe('alice@email.com');
-    expect(result.value.status).toBe('PENDING');
+    if (result.isSuccess) {
+      expect(result.value.name).toBe('Alice');
+      expect(result.value.email).toBe('alice@email.com');
+      expect(result.value.status).toBe('PENDING');
+    } else {
+      fail('Expected result to be success');
+    }
   });
 });

@@ -10,7 +10,7 @@ const employeeRepository = new InMemoryEmployeeRepository();
 const registerEmployeeUseCase = new RegisterEmployeeUseCase(employeeRepository);
 const controller = new EmployeeController(registerEmployeeUseCase);
 
-router.post('/employees', validateEmployee, (req, res, next) => controller.register(req, res, next));
+router.post('/employees', validateEmployee, (req, res, next) => { controller.register(req, res, next); });
 router.use(errorHandler);
 
 export default router;
